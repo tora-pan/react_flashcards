@@ -1,13 +1,27 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+
+import "./fileUpload.styles.css";
 
 const FileUpload = () => {
+  const handleSubmit = () => {
+    console.log("handleSubmit");
+  };
+
   return (
-    <div>
-      <Form.Label>Please upload your .csv word list</Form.Label>
-      <Form.Group controlId="formFileLg" className="mb-3 border rounded">
-        <Form.Control type="file" size="lg" />
-      </Form.Group>
+    <div className="fileUpload">
+      <h2>Upload your .csv</h2>
+      <form onSubmit={handleSubmit}>
+        <input
+          name="fileUpload"
+          type="file"
+          class="fileUpload-form"
+          placeholder="Upload a file"
+          required
+        />
+        <button type="submit" className="upload-button">
+          Upload
+        </button>
+      </form>
     </div>
   );
 };

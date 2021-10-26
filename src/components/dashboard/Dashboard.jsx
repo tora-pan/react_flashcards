@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 
 const Dashboard = () => {
@@ -10,17 +9,10 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Profile</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <strong>Email:</strong>
-          {currentUser.email}
-        </Card.Body>
-      </Card>
-      <Button variant="link" onClick={handleLogout}>
-        Log Out
-      </Button>
+      {error && error}
+      {currentUser.email}
+
+      <button onClick={handleLogout}>Log Out</button>
     </div>
   );
 };

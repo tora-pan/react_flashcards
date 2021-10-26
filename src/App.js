@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import "./app.css";
 
 import Header from "./components/header/Header";
@@ -18,25 +17,18 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
-        <Container
-          className="d-flex justify-content-center container"
-          style={{ minHeight: "100vh" }}
-        >
-          <div className="w-100" style={{ maxWidth: "400px" }}>
-            <AuthProvider>
-              <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route path="/flashcards" component={FlashcardPage} />
-                <Route path="/dashboard" component={Dashboard} />
-                <Route path="/about" component={AboutPage} />
-                <Route path="/contact" component={ContactPage} />
-                <Route path="/signup" component={Signup} />
-                <Route path="/login" component={Login} />
-              </Switch>
-            </AuthProvider>
-          </div>
-        </Container>
+        <AuthProvider>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/flashcards" component={FlashcardPage} />
+            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/contact" component={ContactPage} />
+            <Route path="/signup" component={Signup} />
+            <Route path="/login" component={Login} />
+          </Switch>
+        </AuthProvider>
         <Footer />
       </Router>
     </>
