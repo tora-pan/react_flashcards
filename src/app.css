@@ -1,3 +1,10 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
 .container {
   background-color: rgb(255, 197, 197);
 }

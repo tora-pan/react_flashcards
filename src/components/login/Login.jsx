@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
-import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
+
+import "./login.styles.css";
 
 const Login = () => {
   const emailRef = useRef();
@@ -26,30 +27,34 @@ const Login = () => {
   }
 
   return (
-    <>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Log In</h2>
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" ref={emailRef} required />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" ref={passwordRef} required />
-            </Form.Group>
-            <Button disabled={loading} type="submit" className="w-100 mt-3">
-              Log In
-            </Button>
-          </Form>
-        </Card.Body>
-      </Card>
-      <div className="w-100 text-center mt-2">
+    <div className="login">
+      <h2>Login</h2>
+      <form onSubmit={handleSubmit}>
+        {error && { error }}
+        <input
+          name="email"
+          type="text"
+          class="login-form"
+          placeholder="Email"
+          ref={emailRef}
+          required
+        />
+        <input
+          name="password"
+          type="password"
+          class="login-form"
+          placeholder="Password"
+          ref={passwordRef}
+          required
+        />
+        <button disabled={loading} type="submit" className="login-button">
+          Log In
+        </button>
+      </form>
+      <div className="">
         Don't have an account? <Link to="/signup">Sign Up</Link>
       </div>
-    </>
+    </div>
   );
 };
 

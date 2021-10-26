@@ -2,9 +2,12 @@ import React from "react";
 import "./header.css";
 
 import { Link } from "react-router-dom";
-import "./header.css";
+
+import { useAuth } from "../../contexts/AuthContext";
 
 const Header = () => {
+  const { currentUser } = useAuth();
+
   return (
     <div className="header">
       <nav className="navbar">
@@ -22,6 +25,15 @@ const Header = () => {
           <Link to="/contact" className="link">
             <li>Contact</li>
           </Link>
+          {currentUser ? (
+            <Link to="/logout" className="link">
+              <li>Logout</li>
+            </Link>
+          ) : (
+            <Link to="/signup" className="link">
+              <li>Signup</li>
+            </Link>
+          )}
         </ul>
       </nav>
     </div>
