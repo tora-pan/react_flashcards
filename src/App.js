@@ -20,7 +20,7 @@ function App() {
       <Router>
         <Header />
         <Container
-          className="d-flex align-items-center justify-content-center container"
+          className="d-flex justify-content-center container"
           style={{ minHeight: "100vh" }}
         >
           <div className="w-100" style={{ maxWidth: "400px" }}>
