@@ -6,7 +6,11 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 
 const Header = () => {
-  const { currentUser } = useAuth();
+  const { currentUser, logout } = useAuth();
+
+  function test() {
+    logout();
+  }
 
   return (
     <div className="header">
@@ -26,12 +30,10 @@ const Header = () => {
             <li>Contact</li>
           </Link>
           {currentUser ? (
-            <Link to="/logout" className="link">
-              <li>Logout</li>
-            </Link>
+            <button onClick={test}>Logout</button>
           ) : (
-            <Link to="/signup" className="link">
-              <li>Signup</li>
+            <Link to="/login" className="link">
+              <li>Login</li>
             </Link>
           )}
         </ul>

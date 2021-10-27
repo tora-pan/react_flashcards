@@ -4,10 +4,14 @@ form {
 }
 
 .signup {
+  width: 100vw;
+  height: 90vh;
+  margin: auto;
+  padding: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background-color: rgb(168, 95, 95);
 }
 
 .signup-form {

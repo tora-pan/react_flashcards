@@ -1,3 +1,7 @@
+.header {
+  width: 100vw;
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -14,7 +18,7 @@
 }
 
 .navlinks {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
