@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <h1>Home Page</h1>
-      {currentUser && <h3>{currentUser.email}</h3>}
+      {currentUser && <h3>Welcome, {currentUser.email}</h3>}
     </div>
   );
 };

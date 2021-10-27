@@ -60,7 +60,7 @@ const Signup = () => {
           required
         />
         <button disabled={loading} type="submit" className="signup-button">
-          Log In
+          Sign Up
         </button>
       </form>
       <div className="">

@@ -30,7 +30,9 @@ const Header = () => {
             <li>Contact</li>
           </Link>
           {currentUser ? (
-            <button onClick={test}>Logout</button>
+            <button className="button-28" onClick={test}>
+              Logout
+            </button>
           ) : (
             <Link to="/login" className="link">
               <li>Login</li>
