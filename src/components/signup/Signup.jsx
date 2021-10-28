@@ -32,7 +32,7 @@ const Signup = () => {
 
   return (
     <div className="signup">
-      <h2>Sign Up</h2>
+      <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         {error && { error }}
         <input

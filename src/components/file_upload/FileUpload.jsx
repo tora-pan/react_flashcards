@@ -9,13 +9,12 @@ const FileUpload = () => {
 
   return (
     <div className="fileUpload">
-      <h2>Upload your .csv</h2>
       <form onSubmit={handleSubmit}>
+        <label>upload your .csv</label>
         <input
           name="fileUpload"
           type="file"
-          class="fileUpload-form"
-          placeholder="Upload a file"
+          className="fileUpload-form"
           required
         />
         <button type="submit" className="upload-button">
