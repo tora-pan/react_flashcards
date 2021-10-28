@@ -19,7 +19,7 @@ const Login = () => {
       setError("");
       setLoading(true);
       login(emailRef.current.value, passwordRef.current.value);
-      history.push("/");
+      history.push("/flashcards");
     } catch {
       setError("Failed to login");
     }
