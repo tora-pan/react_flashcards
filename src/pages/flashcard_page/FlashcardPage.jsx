@@ -4,15 +4,17 @@ import Card from "../../components/card/Card";
 import "./flashcard.css";
 
 import { useAuth } from "../../contexts/AuthContext";
+import { useData, DataProvider } from "../../contexts/DataContext";
 
 const FlashcardPage = () => {
   const { currentUser } = useAuth();
-
   return (
     <div className="flashcard">
       <h1>Flashcard Page</h1>
       {currentUser && <FileUpload />}
-      <Card />
+      <DataProvider>
+        <Card />
+      </DataProvider>
     </div>
   );
 };
