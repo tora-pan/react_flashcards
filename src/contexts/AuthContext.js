@@ -21,6 +21,7 @@ export function AuthProvider({ children }) {
   }
 
   function logout() {
+    // merge conflict
     return auth.signOut();
   }
 
