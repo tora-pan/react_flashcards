@@ -6,7 +6,7 @@ import "./card.styles.css";
 const Card = () => {
   const [currentWord, setCurrentWord] = useState(0);
   const [wordList, setWordList] = useState([
-    { eng: 'Hover the "i"', jpn: "To reveal the back of the card" },
+    { eng: 'Hover the "i"', jpn: "To reveal the back of the card!" },
   ]);
   const { getData, firebaseData } = useData();
 
