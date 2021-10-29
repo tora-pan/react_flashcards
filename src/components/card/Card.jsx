@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { DataProvider, useData } from "../../contexts/DataContext";
 
+import Button from "../button/Button";
+
 import "./card.styles.css";
 
 const Card = () => {
@@ -16,11 +18,15 @@ const Card = () => {
     } else {
       setWordList(firebaseData);
     }
+
+
+
     if (currentWord < wordList.length - 1) {
       setCurrentWord(currentWord + 1);
     } else if (currentWord === wordList.length - 1) {
       setCurrentWord(0);
     }
+    
   };
 
   return (
@@ -34,7 +40,8 @@ const Card = () => {
               <p>{wordList && wordList[currentWord].jpn}</p>
             </div>
           </div>
-          <button onClick={getNextWord}>Next Word</button>
+          <Button func={getNextWord} btnText="Next Word"/>
+          {/* <button onClick={getNextWord}>Next Word</button> */}
         </div>
       </>
     </DataProvider>
