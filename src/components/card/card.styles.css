@@ -46,7 +46,7 @@
   background-color: #41f2ff;
   -webkit-clip-path: circle(12% at 100% 0%);
   clip-path: circle(12% at 100% 0%);
-  transition: all 300ms ease-in-out;
+  transition: all 400ms ease-in-out;
   z-index: 1;
 }
 .card .answer p {
