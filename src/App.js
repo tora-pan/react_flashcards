@@ -19,15 +19,17 @@ function App() {
       <Router>
         <AuthProvider>
           <Header />
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path="/flashcards" component={FlashcardPage} />
-            <Route path="/dashboard" component={Dashboard} />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/contact" component={ContactPage} />
-            <Route path="/signup" component={Signup} />
-            <Route path="/login" component={Login} />
-          </Switch>
+          <div className="container">
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route path="/flashcards" component={FlashcardPage} />
+              <Route path="/dashboard" component={Dashboard} />
+              <Route path="/about" component={AboutPage} />
+              <Route path="/contact" component={ContactPage} />
+              <Route path="/signup" component={Signup} />
+              <Route path="/login" component={Login} />
+            </Switch>
+          </div>
           <Footer />
         </AuthProvider>
       </Router>
