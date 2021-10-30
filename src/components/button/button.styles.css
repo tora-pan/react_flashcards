@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    background: lightcoral;
+    background: #cc4949;
     border-radius: 5px;
     border: 0;
     cursor: pointer;
@@ -18,5 +18,5 @@
   }
 
 .button:hover {
-    background: #41f2ff;
+    background: #9e3a3a;
   }
