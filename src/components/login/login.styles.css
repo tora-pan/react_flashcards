@@ -5,7 +5,7 @@ form {
 
 .login {
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   margin: auto;
   padding: 0 auto;
   display: flex;
@@ -13,10 +13,8 @@ form {
   align-items: center;
 }
 
-
-
 .login-form {
-  color: white;
+  color: #cc6666;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -32,17 +30,17 @@ form {
 }
 
 .login-form:focus {
-  border: 2px solid #cc4949;
+  border: 2px solid #94242d;
 }
 
-[type="submit"] {
+.login-button {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: 100%;
-  background-color: #cc4949;
+  background-color: #1d3557;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  color: black;
+  color: #f1faee;
   font-size: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -50,6 +48,6 @@ form {
   margin-top: -4px;
   font-weight: 700;
 }
-[type="submit"]:hover {
-  background: #8bcc66;
+.login-button:hover {
+  background: #94242d;
 }

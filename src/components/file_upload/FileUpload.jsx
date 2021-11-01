@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../button/Button";
 
 import "./fileUpload.styles.css";
 
@@ -17,10 +18,11 @@ const FileUpload = () => {
           className="fileUpload-form"
           required
         />
-        <button type="submit" className="upload-button">
+        {/* <button type="submit" className="upload-button">
           Upload
-        </button>
+        </button> */}
       </form>
+      <Button func="" btnText="Upload" />
     </div>
   );
 };

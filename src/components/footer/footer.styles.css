@@ -1,11 +1,14 @@
 .footer {
   width: 100%;
+  height: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightcoral;
-  color: white;
+  /* background-color: lightcoral; */
+  bottom: 0;
+  padding: 20px;
+  color: #f1faee;
   font-size: 2rem;
-  position: relative;
+  /* position: relative; */
 }

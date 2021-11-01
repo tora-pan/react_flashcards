@@ -1,22 +1,23 @@
 .button {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    background: #cc4949;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    margin-top: 10px;
-    font-weight: 700;
-  }
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background: #1d3557;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: 10px;
+  font-weight: 700;
+}
 
 .button:hover {
-    background: #9e3a3a;
-  }
+  background: white;
+  color: black;
+}

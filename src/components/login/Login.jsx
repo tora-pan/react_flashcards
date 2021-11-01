@@ -47,7 +47,7 @@ const Login = () => {
           ref={passwordRef}
           required
         />
-        <button disabled={loading} type="submit" className="login-button">
+        <button disabled={loading} type="" className="login-button">
           Log In
         </button>
       </form>

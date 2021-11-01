@@ -4,17 +4,19 @@ import Card from "../../components/card/Card";
 import "./flashcard.css";
 
 import { useAuth } from "../../contexts/AuthContext";
-import { useData, DataProvider } from "../../contexts/DataContext";
+import { DataProvider } from "../../contexts/DataContext";
 
 const FlashcardPage = () => {
   const { currentUser } = useAuth();
   return (
     <div className="flashcard">
       <h1>Flashcard Page</h1>
-      {currentUser && <FileUpload />}
-      <DataProvider>
-        <Card />
-      </DataProvider>
+      {currentUser ? <FileUpload /> : "Please login to upload your .csv"}
+      <div className="card-wrapper">
+        <DataProvider>
+          <Card />
+        </DataProvider>
+      </div>
     </div>
   );
 };
